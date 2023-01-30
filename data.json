@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Lars Larsson",
+      "phone": "+46701234567"
+    },
+    {
+      "id": "2",
+      "name": "Bengt Bengtsson",
+      "phone": "+46709876543"
+    },
+    {
+      "id": "3",
+      "name": "Olle Olsson",
+      "phone": "+46707483290"
+    }
+  ]
+}
