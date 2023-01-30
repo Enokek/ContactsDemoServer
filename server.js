@@ -26,7 +26,7 @@ app.post("/contact", (req, res) => {
   req.body.id = contacts.length + 1;
 
   contacts.push(req.body);
-  res.json(req.body);
+  res.json(req.body.id);
 });
 
 app.listen(port, () => {
