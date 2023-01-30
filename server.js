@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Test, I am alive!!!");
 });
 
-app.get("/contacts", (req, res) => {
+app.get("/contact", (req, res) => {
   res.json(contacts);
 });
 
