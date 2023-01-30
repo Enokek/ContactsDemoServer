@@ -3,6 +3,8 @@ const app = express();
 const port = 5500;
 const contacts = [];
 
+app.use(express.json());
+
 contacts.push({
   id: "1",
   name: "Lars Larsson",
@@ -26,6 +28,13 @@ app.get("/contact/:id", (req, res) => {
 
 app.get("/contact", (req, res) => {
   res.json(contacts);
+});
+
+app.post("/contact", (req, res) => {
+  req.body.id = contacts.length + 1;
+
+  contacts.push(req.body);
+  res.json(req.body);
 });
 
 app.listen(port, () => {
