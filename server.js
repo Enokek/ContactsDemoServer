@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
   res.send("Test, I am alive!!!");
 });
 
+app.get("/contacts", (req, res) => {
+  res.json(contacts);
+});
+
 app.listen(port, () => {
   console.log("Listening to port 5500...");
 });
