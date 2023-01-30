@@ -24,6 +24,10 @@ app.get("/contact/:id", (req, res) => {
   res.json(found);
 });
 
+app.get("/contact", (req, res) => {
+  res.json(contacts);
+});
+
 app.listen(port, () => {
   console.log("Listening to port 5500...");
 });
