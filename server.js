@@ -5,12 +5,6 @@ const contacts = [];
 
 app.use(express.json());
 
-contacts.push({
-  id: "1",
-  name: "Lars Larsson",
-  phone: "+46701234567",
-});
-
 app.use(express.static("public"));
 
 app.get("/contact/:id", (req, res) => {
