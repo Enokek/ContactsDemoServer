@@ -11,9 +11,7 @@ contacts.push({
   phone: "+46701234567",
 });
 
-app.get("/", (req, res) => {
-  res.send("Test, I am alive!!!");
-});
+app.use(express.static("public"));
 
 app.get("/contact/:id", (req, res) => {
   const found = contacts.find((contact) => contact.id === req.params.id);
