@@ -19,7 +19,7 @@ app.get("/contact/:id", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-  res.json(contacts);
+  res.json({ contacts: contacts });
 });
 
 app.post("/contact", (req, res) => {
